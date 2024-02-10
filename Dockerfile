@@ -1,4 +1,4 @@
-FROM python:3.8 as build
+FROM ghcr.io/merklebot/hackathon-amd-image:master as build
 
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
@@ -9,11 +9,10 @@ ARG Version
 ARG GitCommit
 RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM" 
 
-
-RUN apt-get update && apt-get install -y ffmpeg alsa-utils
-
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 COPY requirements.txt requirements.txt
 RUN python3.8 -m pip install --upgrade pip
 RUN python3.8 -m pip install -r requirements.txt
+
+CMD ["python3.8", "main.py"]
