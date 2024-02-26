@@ -34,3 +34,4 @@ def generate_tree(path):
   create_text_file(f"{path}/ditr4/f4-0.txt", "Content of f4-0.txt")
 
 if __name__=='__main__':
+  generate_tree(DATA_PATH)
