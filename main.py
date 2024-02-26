@@ -25,10 +25,10 @@ def generate_tree(path):
   create_text_file(f"{path}/f0.txt", "Content of f0.txt")
   
   os.makedirs(f"{path}/dir1/dir2/dir3", exist_ok=True)
-  create_text_file(f"{path}/ditr1/f1-0.txt", "Content of f1-0.txt")
-  create_text_file(f"{path}/ditr1/f1-1.txt", "Content of f1-1.txt")
-  create_text_file(f"{path}/ditr1/dir2/f2-0.txt", "Content of f2-0.txt")
-  create_text_file(f"{path}/ditr1/dir3/f3-0.txt", "Content of f3-0.txt")
+  create_text_file(f"{path}/dir1/f1-0.txt", "Content of f1-0.txt")
+  create_text_file(f"{path}/dir1/f1-1.txt", "Content of f1-1.txt")
+  create_text_file(f"{path}/dir1/dir2/f2-0.txt", "Content of f2-0.txt")
+  create_text_file(f"{path}/dir1/dir3/f3-0.txt", "Content of f3-0.txt")
   
   os.makedirs(f"{path}/dir4", exist_ok=True)
   create_text_file(f"{path}/ditr4/f4-0.txt", "Content of f4-0.txt")
