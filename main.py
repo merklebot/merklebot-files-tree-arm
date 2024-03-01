@@ -31,7 +31,7 @@ def generate_tree(path):
   create_text_file(f"{path}/dir1/dir2/dir3/f3-0.txt", "Content of f3-0.txt")
   
   os.makedirs(f"{path}/dir4", exist_ok=True)
-  create_text_file(f"{path}/ditr4/f4-0.txt", "Content of f4-0.txt")
+  create_text_file(f"{path}/dir4/f4-0.txt", "Content of f4-0.txt")
 
 if __name__=='__main__':
   generate_tree(DATA_PATH)
